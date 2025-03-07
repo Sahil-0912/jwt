@@ -21,9 +21,9 @@ router.get('/AddCategory', VerfifyUser, (req, res) => {
     res.render('Pages/AddCategory')
 })
 
-router.get('/Viewcategory', async (req, res) => {
+router.get('/ViewCategory', async (req, res) => {
     const Category = await CategoryModel.find()
-    res.render('Pages/Viewcategory',
+    res.render('Pages/ViewCategory',
         {
             Category,
             title: 'ViewCategory'
