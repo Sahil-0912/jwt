@@ -31,7 +31,8 @@ function checkFileType(file, cb) {
             file.mimetype === 'image/png' ||
             file.mimetype === 'image/jpg' ||
             file.mimetype === 'image/jpeg' ||
-            file.mimetype === 'image/svg'
+            file.mimetype === 'image/svg' ||
+            file.mimetype === 'image/webp'
         ) {
             cb(null, true);
         } else {
@@ -40,4 +41,4 @@ function checkFileType(file, cb) {
     }
 }
 
-module.exports = upload;
+module.exports = upload;
