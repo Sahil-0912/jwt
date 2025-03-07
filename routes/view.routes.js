@@ -9,6 +9,7 @@ const jwt = require('jsonwebtoken')
 
 
 
+
 router.get('/', VerfifyUser, (req, res) => {
     // res.render('pages/index')
     res.render('Pages/index')

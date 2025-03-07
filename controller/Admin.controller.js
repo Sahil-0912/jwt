@@ -4,6 +4,7 @@ const otpGenerator = require('otp-generator')
 const { plainToHash, HashToPlain } = require("../utils/password")
 const { ForgotMail } = require("../utils/ForgotMailer")
 const jwt = require('jsonwebtoken')
+
 exports.register = async (req, res) => {
     // console.log(req.body);
     try {
